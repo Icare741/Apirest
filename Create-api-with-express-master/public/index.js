@@ -22,7 +22,6 @@ function handleClickPut(route) {
         headers: {
             'Content-Type':'application.json'
         }
-
     }
     axios.put(url, body,config).then((res) =>{
         el.innerHTML = JSON.stringify(res.data);
@@ -31,6 +30,7 @@ function handleClickPut(route) {
         el.innerHTML = err.message;
     })
 }
+
 /*function getDate(route){
 
     let url = "http://localhost:3000/" + route;

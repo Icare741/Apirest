@@ -26,9 +26,9 @@ module.exports = (app) => {
             return res.status(500).send({message: "error occured 2" , status: 500});
         }
     })
-    app.put('/api/fake/:id', (req, res) =>{
+    /*app.put('/api/fake/:id', (req, res) =>{
         try{
-            let target = json.users[req.params.id];
+            let target = json.articles[req.params.id];
             if(target && req.body.name) target.name = req.body.name;
             else throw "invalide user id"
             res.status(200).send(target);
@@ -38,7 +38,35 @@ module.exports = (app) => {
             console.error(err)
             return res.status(500).send({message: err, status: 500});
         }
-    });
+    });*/
+    app.put('/api/articles/:id', (req,res) => {
+        try {
+            if (!json.articles[req.params.id]) throw "Id not found !";
+            if (!req.body) throw "body empty";
+            console.log(req);
+            json['articles'][req.params.id]['name'] = req.body['name'];
+            
+            return res.status(200).send(json.articles[req.params.id]);            
+        } catch (err) {
+            console.error(err)
+            return res.status(500).send({message: "an error occured", status: 500}); 
+        }
+    })
+    app.post('/api/articles', (req,res) => {
+        try {
+            if (!req.body) throw "body empty";
+            let ret = {
+                "name": req.body['name'],
+                "_id": articleJson.articles.length
+            }
+            console.log(ret);
+            articleJson['articles'].push(ret);
+            return res.status(200)          
+        } catch (err) {
+            console.error(err)
+            return res.status(500).send({message: "an error occured", status: 500}); 
+        }
+    })
 }
 
 // /api/user/:id
