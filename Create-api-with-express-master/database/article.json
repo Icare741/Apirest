@@ -1,0 +1,38 @@
+{
+    "article": [{
+        "articleId": 1,
+        "_id": 0,
+        "type":"sport",
+        "name": "Escalade"
+    }, {
+        "articleId": 2,
+        "_id": 1,
+        "type":"sport",
+        "name": "Victoire du PSG"
+    }, {
+        "articleId": 3,
+        "_id": 2,
+        "type":"nature",
+        "name": "thalassa"
+    },{
+        "articleId": 4,
+        "_id": 3,
+        "type":"international",
+        "name": "tentative d'assassinat de poutine à moscou !"
+    },{
+        "articleId": 5,
+        "_id": 4,
+        "type":"drame",
+        "name": "Notre dame sauver !!!"
+    },{
+        "articleId": 6,
+        "_id": 5,
+        "type":"sport",
+        "name": "Nadal toujours le crack du tennis"
+    },{
+        "articleId": 7,
+        "_id": 6,
+        "type":"les truc de geek la",
+        "name": "Esport: Les coréens toujours invinsible (fait chier)"
+    }]
+}
