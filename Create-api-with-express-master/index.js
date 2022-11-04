@@ -13,9 +13,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 require("./api/demo")(app);
 
 app.get('', (req, res) => { // Serve index page
-    res.sendFile("./ynovapifront/index.html");
+    res.sendFile("./public/index.html");
 });
-
 app.listen(port, () => {
     console.log(`Server started on port ${port}`);
 });

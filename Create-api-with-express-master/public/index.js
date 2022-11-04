@@ -31,7 +31,7 @@ function handleClickPut(route) {
         el.innerHTML = err.message;
     })
 }
-function getDate(route){
+/*function getDate(route){
 
     let url = "http://localhost:3000/" + route;
     return new Promise((resolve, reject) => {
@@ -68,4 +68,4 @@ function printDate(){
 function handleError(err){
     console.error(err);
     printData(err.message)
-}
+}*/

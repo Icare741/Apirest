@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>API – Get one user data</title>
+
+        <link rel="stylesheet" href="./main.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script defer src="./index.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="cols mb-md">
+                <nav class="bread">
+                    <ul>
+                        <li><a href="./index.html">Getting Started</a></li>
+                        <li><a href="./fake.html">Etape 1</a></li>
+                        <li class="active"><a href="./fakeid.html">Etape 2</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cols mb-md">
+                <h1>Permet d'obtenir que le premier articles</h1>
+            </div>
+            <div class="cols mb-md">
+                <div class="inpt">
+                    <div id="api-rawRes"></div>
+                </div>
+            </div>
+            <div class="cols mb-md">
+                <button class="btn prm" onclick="handleClick('api/fake/1')">Request</button>
+            </div>
+            <div class="cols">
+                <a class="btn scnd" href="./put.html">Next</a>
+            </div>
+        </div>
+    </body>
+</html>

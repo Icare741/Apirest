@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>API – Send Text</title>
+
+        <link rel="stylesheet" href="./main.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script defer src="./index.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="cols mb-md">
+                <nav class="bread">
+                    <ul>
+                        <li><a href="./index.html">Getting Started</a></li>
+                        <li class="active"><a href="./text.html">Step 1</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cols mb-md">
+                <h1>Send Text</h1>
+                <p>First, you should create a simple <b>GET</b> request with <b>Axios</b> on the <b>"/hello"</b> route that returns a <b>STRING</b>.</p>
+            </div>
+            <div class="cols mb-md">
+                <div class="inpt">
+                    <div id="api-rawRes"></div>
+                </div>
+            </div>
+            <div class="cols mb-md">
+                <button class="btn prm" onclick="handleClick('hello')">Request</button>
+            </div>
+            <div class="cols">
+                <a class="btn scnd" href="./fake.html">Next</a>
+            </div>
+        </div>
+    </body>
+</html>

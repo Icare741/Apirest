@@ -1,4 +1,4 @@
-const json = require('../database/article');
+const json = require('../database/fake');
 
 module.exports = (app) => {
 // Code here
@@ -6,7 +6,7 @@ module.exports = (app) => {
         return res.send('Hello world');
     })
 
-    app.get('/api/article', (req, res) => {
+    app.get('/api/fake', (req, res) => {
         try{
             return res.status(200).send(json)
         } catch(err) {
@@ -17,8 +17,8 @@ module.exports = (app) => {
     app.get('/api/fake/:id', (req, res) =>{
         console.log();
         try{
-            if(json.users[req.params.id]){
-                return res.status(200).send(json.users[req.params.id])
+            if(json.articles[req.params.id]){
+                return res.status(200).send(json.articles[req.params.id])
             } throw "User not found"
         }
         catch(err){

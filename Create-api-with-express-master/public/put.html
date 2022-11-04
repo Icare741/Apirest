@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>API – Get one user data</title>
+
+        <link rel="stylesheet" href="./main.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script defer src="./index.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="cols mb-md">
+                <nav class="bread">
+                    <ul>
+                        <li><a href="./index.html">Getting Started</a></li>
+                        <li><a href="./text.html">Etape 1</a></li>
+                        <li><a href="./fakeid.html">Etape 2</a></li>
+                        <li class="active"><a href="./put.html">Etape 3</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cols mb-md">
+                <h1>Get one user data</h1>
+                <p>Finally, we would like to change the name of a user with a <b>PUT</b> request.</p>
+            </div>
+            <div class="cols mb-md">
+                <div class="inpt">
+                    <div id="api-rawRes"></div>
+                </div>
+            </div>
+            <div class="cols mb-md">
+                <input class="inpt" type="text" id="name" name="name" placeholder="Change name here">
+                <button class="btn prm" onclick="handleClickPut('api/fake/1')">Update</button>
+            </div>
+        </div>
+    </body>
+</html>
